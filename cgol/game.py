@@ -11,7 +11,8 @@ class GameOfLife:
     WHITE = (255, 255, 255)
     BLACK = (0, 0, 0)
     GRAY = (200, 200, 200)
-    BLUE = (0, 0, 255)
+    GREEN = (70, 210, 70)
+    BLUE = (0, 138, 230)
 
     # Grid Constants
     FILL_PADDING = 1
@@ -177,7 +178,7 @@ class GameOfLife:
         button_rect = self.buttons[button_text]
 
         # Draw button in green
-        pygame.draw.rect(self.screen, (0, 255, 0), button_rect)
+        pygame.draw.rect(self.screen, self.GREEN, button_rect)
         pygame.draw.rect(self.screen, self.BLACK, button_rect, 2)  # Redraw border
 
         # Render button text again
@@ -252,7 +253,7 @@ class GameOfLife:
 
 # Run the game
 if __name__ == "__main__":
-    GRID_SIZE = 50
-    CELL_SIZE = 15
+    GRID_SIZE = 30
+    CELL_SIZE = 25
     game = GameOfLife(grid_size=GRID_SIZE, cell_size=CELL_SIZE)
     game.run()
