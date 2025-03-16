@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cgol"
+version = "0.1.0"
+description = "Pygame implementation of Conway's Game of Life."
+authors = ["Abhayjeet Juneja <abhaysjuneja@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "2.2.3"
+pygame = "2.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
